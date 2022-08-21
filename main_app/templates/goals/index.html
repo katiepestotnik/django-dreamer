@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block main %}
+<h1>GOALS</h1>
+<div class='goals'>
+{% for goal in goals%}
+
+        <h3>{{goal.name}}</h3>
+        <p>Description: {{goal.description}}</p>
+        <p>Motivation: {{goal.motivation}}</p>
+        <ul>
+            <li>Starting Metric: {{goal.measure}}</li>
+            <li>Start Date: {{goal.start_date}}</li>
+            <li>Target Completion Date: {{goal.target_date}}</li>
+        </ul>
+        <p>Roadblock: {{goal.roadblock}}</p><br>
+
+{% endfor %}
+</div>
+{% endblock %}
