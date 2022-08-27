@@ -71,7 +71,7 @@ footer {
 }
 .img-box{
     text-align: center;
-    margin: 1em;
+    margin: 1.5em;
 }
 
 /* index */
@@ -79,13 +79,19 @@ footer {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-
 }
 .single{
     box-shadow: var(--accent-color) 0px 54px 55px,var(--accent-color)  0px -12px 30px, var(--accent-color)  0px 4px 6px, var(--accent-color)  0px 12px 13px, var(--accent-color)  0px -3px 5px;
     padding: 20px;
     border-radius: 20px;
     width: 33%
+}
+.single:hover{
+    background-color: var(--nav-color);
+    color: var(--white-color);
+    overflow: hidden;
+    transition: all .7s ease;
+
 }
 .goal-name{
     font-size: 50px;
