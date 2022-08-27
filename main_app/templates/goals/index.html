@@ -5,14 +5,16 @@
 {% for goal in goals%}
 
         <h3>{{goal.name}}</h3>
-        <p>Description: {{goal.description}}</p>
+        <p>Motivation: {{goal.reason}}</p>
         <p>Motivation: {{goal.motivation}}</p>
         <ul>
-            <li>Starting Metric: {{goal.measure}}</li>
             <li>Start Date: {{goal.start_date}}</li>
-            <li>Target Completion Date: {{goal.target_date}}</li>
+            <li>Target End Date: {{goal.end_date}}</li>
+            <li>Start Weight: {{goal.start_weight}}</li>
+            <li>Target Weight: {{goal.end_weight}}</li>
         </ul>
-        <p>Roadblock: {{goal.roadblock}}</p><br>
+        <p>Exercise: {{goal.exercise}}</p><br>
+        <p>Completed? {{goal.completed}}</p>
 
 {% endfor %}
 </div>

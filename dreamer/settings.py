@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'dreamer.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'dream-engineer',
+        'NAME': 'dream_engineer',
     }
 }
 
