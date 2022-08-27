@@ -1,6 +1,9 @@
 {% extends 'base.html' %}
 {% block main %}
     <div>
-        <p>This application will allow you to engineer and achieve your goals.</p>
+        <p class='about'>This application is built so that you can create personal goals, track meals and calorie intake, and achieve goals that you have always wanted to achieve.</p>
+    </div>
+    <div class='img-box'>
+        {% load static %}<img src="{% static "/media/success-image.jpeg" %}" alt="success"  class='success-img'>
     </div>
 {% endblock %}

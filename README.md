@@ -25,9 +25,5 @@ API: fatsecretPlatform<br>
 
 ### Dev Notes
 Database name: dream-engineer<br>
-Drk Pink: #E46F80
-Lgt Pink: #E9CAD2
-White: #FFF
-Grey: #D2D2D0
-Black: #000
+Shocking Pink (#F205CB), Bright Turquoise (#05F2DB), Snow White (#FFF4FD), Warm Black (#0B3B48), and Maastricht Blue (#00262F).
 

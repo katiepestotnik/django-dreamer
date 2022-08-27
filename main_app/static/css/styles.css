@@ -1,37 +1,92 @@
-body {
-    background-color: #fff;
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+/* base */
+:root {
+    --nav-color: #F205CB;
+    --border-color: #0B3B48;
+    --font-color: #00262F;
+    --white-color: #FFF4FD;
+    --accent-color: #05F2DB;  
 }
 
-
+body {
+    background-color: var(--white-color);
+    color: var(--font-color);
+    font-family: 'Roboto', sans-serif;
+}
 nav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
-    background-color: #E46F80;
+    background-color: var(--nav-color);
     width: 100%;
     height: 3em;
-    border-top: 5px solid #000;
-    border-bottom: 5px solid #000
+    border-top: 5px solid var(--border-color);
+    border-bottom: 5px solid var(--border-color)
+}
+.nav-box{
+    display:flex;
 }
 .border-text {
     padding: .5em;
     text-decoration: none;
-    color: #000;
+    color: var(--font-color);
     margin-right: .5em;
+    color: var(--white-color);
+    font-size: 1.3em;
+    letter-spacing: 3px;
+}
+.app-name{
+    text-align: center;
+    margin-bottom: 1.5em;
 }
 footer {
     position: fixed;
     bottom: 0;
-    background-color: #E46F80;
+    background-color: var(--nav-color);
     height: 3em;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 5px solid #000;
-    border-bottom: 5px solid #000;
+    border-top: 5px solid var(--border-color);
+    border-bottom: 5px solid var(--border-color);
+    font-family: 'Permanent Marker', cursive;
+}
+/* about */
+.about{
+    text-align: center;
+    font-size: 1.5em;
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid var(--accent-color);
+    box-shadow: var(--accent-color) 0px 54px 55px,var(--accent-color)  0px -12px 30px, var(--accent-color)  0px 4px 6px, var(--accent-color)  0px 12px 13px, var(--accent-color)  0px -3px 5px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.success-img{
+    width: 50%;
+}
+.img-box{
+    text-align: center;
+    margin: 1em;
 }
 
+/* index */
 .goals{
-    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+.single{
+    box-shadow: var(--accent-color) 0px 54px 55px,var(--accent-color)  0px -12px 30px, var(--accent-color)  0px 4px 6px, var(--accent-color)  0px 12px 13px, var(--accent-color)  0px -3px 5px;
+    padding: 20px;
+    border-radius: 20px;
+    width: 33%
+}
+.goal-name{
+    font-size: 50px;
 }

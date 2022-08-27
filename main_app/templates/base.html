@@ -6,32 +6,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
-    <title>Dream Enginner</title>
+    <link rel="stylesheet" href="/static/css/styles.css?{% now "U" %}"/>
+    <title>Dream Engineer</title>
 </head>
 <body>
     <header>
         <nav>
             <div>
-                <a class='border-text' href="/">HOME</a>
+                <div>
+                    <a class='border-text' href="/">HOME</a>
+                </div>
             </div>
-            <div>
-                <a class='border-text'
-                href="/about">ABOUT</a>
+            <div class='nav-box'>
+                <div>
+                    <a class='border-text'
+                    href="/about">ABOUT</a>
+                </div>
+                <div>
+                    <a class='border-text'
+                    href="/goals">GOALS</a>
+                </div>
             </div>
-            <div>
-                <a class='border-text'
-                href="/goals">GOALS</a>
-            </div>
+
         </nav>
     </header>
-    <h1>Dream Engineer</h1>
+    <h1 class='app-name'>Dream Engineer</h1>
     <main>
         {% block main %}
         {% endblock %}
     </main>
     <footer>
-        <div class='border-text'>FOOTER</div>
+        <div class='border-text'>"Take care of your body. It's the only place you have to live in."— Jim Rohn</div>
     </footer>
 </body>
 </html>
