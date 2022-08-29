@@ -14,17 +14,22 @@
         <nav>
             <div>
                 <div>
-                    <a class='border-text' href="/">HOME</a>
+                    <a class='border-text' href="{% url 'home' %}">HOME</a>
                 </div>
             </div>
             <div class='nav-box'>
                 <div>
                     <a class='border-text'
-                    href="/about">ABOUT</a>
+                    href="{% url 'about' %}">ABOUT</a>
                 </div>
                 <div>
                     <a class='border-text'
-                    href="/goals">GOALS</a>
+                    href="{% url 'goals' %}">GOALS</a>
+                </div>
+                <div>
+                    <a 
+                    class='border-text'
+                    href="{% url 'goal_create'%}">CREATE</a>
                 </div>
             </div>
 

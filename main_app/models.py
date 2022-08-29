@@ -1,5 +1,6 @@
 from django.contrib.postgres.fields import ArrayField
 from django.db import models
+from django.urls import reverse
 
 
 # Create your models here.
@@ -15,5 +16,9 @@ class Goal(models.Model):
     
     def __str__(self):
         return self.name
+    
+    #the below does not work while success url is established in cbv - at this point i prefer redirect to index
+    def get_absolute_url(self):
+        return reverse('goal_detail', kwargs={'goal_id': self.id})
 
   

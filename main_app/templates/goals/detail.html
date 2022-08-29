@@ -1,14 +1,27 @@
 {% extends 'base.html' %}
 {% block main %}
-<h3 class='goal-name'>{{goal.name}}</h3>
-<h4>Why is this goal important?</h4>
-<p>{{goal.reason}}</p>
-<ul>
-    <li>Start date: {{goal.start_date}}</li>
-    <li>End date: {{goal.end_date}}</li>
-    <li>Starting Weight: {{goal.start_weight}} lbs</li>
-    <li>Target Weight: {{goal.end_weight}} lbs</li>
-</ul>
-<p>Exercise: {{goal.exercise}}</p>
-<p>Completed? {{goal.completed}}</p>
+<div class='goal-detail'>
+    <h3 class='goal-name'>{{goal.name}}</h3>
+    <p>Why is this goal important?</p>
+    <p>{{goal.reason}}</p>
+    <ul>
+        <li>Start date: {{goal.start_date}}</li>
+        <li>End date: {{goal.end_date}}</li><br>
+        <li>Start Weight: {{goal.start_weight}} lbs</li>
+        <li>Target Weight: {{goal.end_weight}} lbs</li>
+    </ul>
+    <p>Exercise</p>
+    {% for exercise in goal.exercise%}
+    <ul>
+        <li>{{exercise}}</li>
+    </ul>
+
+    {% endfor %}
+    {% if goal.completed %}
+    <p>Completed - Yes</p>
+    {% else %}
+    <p>Completed - No</p>
+    {% endif %}
+</div>
+
 {% endblock %}
