@@ -96,3 +96,12 @@ footer {
 .goal-name{
     font-size: 50px;
 }
+.details-link{
+    color: var(--font-color);
+    text-decoration: none;
+}
+.details-link:hover{
+    color: var(--white-color);
+    overflow: hidden;
+    transition: all .7s ease;
+}
